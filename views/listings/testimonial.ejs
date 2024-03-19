@@ -1,0 +1,107 @@
+<%= layout("/layouts/boiler") %>
+
+<style>
+  .container_testimonial {
+    display: flex;
+    align-items: center; /* Center items vertically */
+  }
+
+  .container-text {
+    flex: 1;
+    padding: 0 20px; /* Add padding as needed */
+    text-align: center; /* Center text content */
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items horizontally */
+    min-height: 300px; /* Set minimum height */
+  }
+
+  .container-text h1 {
+    margin-top: 0; /* Remove default margin */
+    margin-bottom: 20px; /* Add margin to bottom */
+  }
+
+  .content {
+    display: flex;
+    align-items: flex-start; /* Align items at the start of the container vertically */
+    justify-content: center; /* Center content horizontally */
+  }
+
+  .text {
+    margin-left: 10px; /* Add margin between the icon and text */
+  }
+
+  .rating {
+    font-size: 0; /* Remove default font size */
+    text-align: center; /* Center the stars */
+  }
+
+  .rating input[type="radio"] {
+    display: none; /* Hide radio inputs */
+  }
+
+  .rating label {
+    cursor: pointer;
+    width: 30px; /* Adjust width of stars */
+    height: 30px; /* Adjust height of stars */
+    background-image: url("https://freeiconshop.com/wp-content/uploads/edd/star-curved-outline-filled.png"); /* Path to empty star image */
+    background-size: cover; /* Make sure the star image fills the container */
+    display: inline-block;
+  }
+
+  .rating input[type="radio"]:checked ~ label {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/7a/Star-empty.png?20210415194930"); /* Path to filled star image */
+  }
+
+  /* Additional style for responsive layout */
+  @media (max-width: 767.98px) {
+    .container_testimonial {
+      flex-direction: column; /* Stack content vertically on small screens */
+    }
+
+    .container-img {
+      margin-top: 20px; /* Add some space between the text and image */
+    }
+  }
+</style>
+
+<div class="container container_testimonial mt-5">
+  <div class="container-text">
+    <h1>
+      <span><i class="fa-solid fa-quote-left"></i></span> Testimonial
+    </h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero fugit
+      animi quae aut eos cupiditate perferendis et architecto sint, quo,
+      recusandae quaerat? Molestias, esse reprehenderit! Labore iste neque
+      cumque laborum? Fuga ad illum ea, aspernatur fugiat nihil adipisci quidem.
+    </p>
+    <div class="container mt-5">
+      <div class="content">
+        <i class="fa-solid fa-award"></i>
+        <div class="text">
+          <h6>Henry Barton</h6>
+          <p style="font-size: 0.8rem">CEO Homefix Pvt. Ltd.</p>
+        </div>
+      </div>
+    </div>
+    <div class="rating">
+      <input type="radio" id="star5" name="rating" value="5" />
+      <label for="star5"></label>
+      <input type="radio" id="star4" name="rating" value="4" />
+      <label for="star4"></label>
+      <input type="radio" id="star3" name="rating" value="3" />
+      <label for="star3"></label>
+      <input type="radio" id="star2" name="rating" value="2" />
+      <label for="star2"></label>
+      <input type="radio" id="star1" name="rating" value="1" />
+      <label for="star1"></label>
+    </div>
+  </div>
+  <div class="container-img">
+    <img
+      src="https://media.istockphoto.com/id/1360654015/vector/group-of-people-gives-stars-ratings-customer-review-concept-positive-feedback-and-evaluation.jpg?s=612x612&w=0&k=20&c=SI16Ln9iNx5VV_3TbHF79pmV-K8o3NiL2nDXoStfb4Y="
+      alt="homefix"
+    />
+  </div>
+</div>
