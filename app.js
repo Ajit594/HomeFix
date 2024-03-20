@@ -171,11 +171,11 @@ app.post("/form", async (req, res) => {
     if (error) {
       console.log(error);
       req.flash("error", error.message);
-      return res.redirect('/listings/form');
+      return res.redirect('/form');
     } else {
       console.log('Email sent: ' + info.response);
       req.flash("success", "Email sent successfully.");
-      return res.redirect('/listings/form');
+      return res.redirect('/form');
     }
   }); 
 });
