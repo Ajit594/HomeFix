@@ -1,4 +1,4 @@
-# HomeFix Web Application README
+# HomeFix - Web Application
 
 ## Overview
 HomeFix is a web application developed using Express and EJS for service bookings. It includes search functionality and email confirmation for bookings, with data stored in the database.
