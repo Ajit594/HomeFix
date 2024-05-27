@@ -34,7 +34,7 @@ HomeFix is a web application developed using Express and EJS for service booking
 Access the website [here](https://homefix-eq0m.onrender.com/).
 
 ## Developer
-This project was developed by Vishal Kumar Yadav.
+This project was developed by Vishal Kumar Yadav, Ajit Kumar Yadav and Shivam Kumar.
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
